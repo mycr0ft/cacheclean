@@ -88,7 +88,7 @@ bpat = re.compile("""
 [^-/\s]+                # (3) release
 (-i686|-x86_64|-any)?   # (4) architecture
 \.pkg\.tar              # (5) extension
-(?:\.(?:gz|bz2|xz|Z))?  # (6) compresssion extension
+(?:\.(?:gz|bz2|xz|Z|zst))?  # (6) compresssion extension
 (?:\.aria2|.sig)?$      # (7) other extension
 """, re.X)
 
